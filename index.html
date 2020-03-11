@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="input_container">
+      <input type="file" onchange="addToList(this)" />
+    </div>
+
+    <div class="dataDisplay">
+      <h1>File Details</h1>
+      <h3>Name</h3>
+      <input class="music_name" type="text" oninput="autosave_name(this)" />
+      <h3>Comments</h3>
+      <input
+        class="music_comment"
+        type="text"
+        oninput="autosave_comment(this)"
+      />
+    </div>
+    <ul id="file_list"></ul>
+    <script src="javascript.js"></script>
+  </body>
+</html>
